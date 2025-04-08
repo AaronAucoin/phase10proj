@@ -32,7 +32,7 @@ class Phase10App extends StatelessWidget {
         initialRoute: '/username',
         routes: {
           '/username': (context) => const UsernameScreen(),
-          '/': (context) => HomeScreen(username: ModalRoute.of(context)!.settings.arguments as String),
+          '/': (context) => const HomeScreen(username: ''),
           '/join': (context) => const JoinGameScreen(),
           '/lobby': (context) => const GameLobbyScreen(),
           '/game': (context) => const GameScreen(),

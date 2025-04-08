@@ -26,7 +26,7 @@ class UsernameScreen extends StatelessWidget {
                   Navigator.pushReplacementNamed(
                     context,
                     '/',
-                    arguments: username,
+                    arguments: username, // Passing username here
                   );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
